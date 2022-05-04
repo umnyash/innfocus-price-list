@@ -12,62 +12,42 @@
         <thead class="price-list__header">
           <tr class="price-list__header-inner">
             <th class="price-list__heading price-list__heading--name" scope="col">
-              <span class="price-list__heading-text">Модель</span>
-              <a class="price-list__heading-button price-list__heading-button--up" href="#!">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a class="price-list__heading-button price-list__heading-button--down" href="#!">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
+              <button class="price-list__heading-button" data-sort-rule="model">
+                <span class="price-list__heading-button-text">Модель</span>
+              </button>
             </th>
             <th class="visually-hidden" scope="col">Фото</th>
             <th class="visually-hidden" scope="col"></th>
             <th class="price-list__heading" scope="col">
-              <span class="price-list__heading-text">Длина хода</span>
-              <a class="price-list__heading-button price-list__heading-button--up" href="#!">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a class="price-list__heading-button price-list__heading-button--down" href="#!">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
+              <button class="price-list__heading-button" data-sort-rule="strokeLength">
+                <span class="price-list__heading-button-text">Длина хода</span>
+              </button>
             </th>
             <th class="price-list__heading" scope="col">
-              <span class="price-list__heading-text">Размер столика</span>
-              <a class="price-list__heading-button price-list__heading-button--up" href="#!">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a class="price-list__heading-button price-list__heading-button--down" href="#!">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
+              <button class="price-list__heading-button" data-sort-rule="tableSize">
+                <span class="price-list__heading-button-text">Размер столика</span>
+              </button>
             </th>
             <th class="price-list__heading" scope="col">Привод</th>
             <th class="price-list__heading" scope="col">Адаптер</th>
             <th class="price-list__heading" scope="col">
-              <span class="price-list__heading-text">Грузоподъёмность</span>
-              <a class="price-list__heading-button price-list__heading-button--up" href="#!">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a class="price-list__heading-button price-list__heading-button--down" href="#!">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
+              <button class="price-list__heading-button" data-sort-rule="loadCapacity">
+                <span class="price-list__heading-button-text">Грузоподъемность</span>
+              </button>
             </th>
             <th class="price-list__heading" scope="col">
-              <span class="price-list__heading-text">Цена за 1 шт</span>
-              <a class="price-list__heading-button price-list__heading-button--up" href="#!">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a class="price-list__heading-button price-list__heading-button--down" href="#!">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
+              <button class="price-list__heading-button" data-sort-rule="price">
+                <span class="price-list__heading-button-text">Цена за 1 шт</span>
+              </button>
             </th>
             <th class="price-list__heading" scope="col">Файл</th>
             <th class="visually-hidden" scope="col"></th>
-            <th class="price-list__heading--additional" scope="col">Подробная информация</th>
+            <th class="visually-hidden" scope="col">Подробная информация</th>
             <th class="visually-hidden" scope="col">Корзина</th>
           </tr>
         </thead>
-        <tbody>
-          <tr class="price-list__item price-item">
+        <tbody class="price-list__body">
+          <tr class="price-list__item price-item" data-model="SPYB25" data-stroke-length="25" data-table-size="65" data-load-capacity="10" data-price="30000">
             <th class="price-item__data price-item__data--name" scope="row">SPYB25</th>
             <td class="price-item__data price-item__data--image">
               <picture>
@@ -87,7 +67,7 @@
             <td class="price-item__data">10 кг</td>
             <td class="price-item__data">30 000 ₽</td>
             <td class="price-item__data">
-              <a class="price-item__file" href="!#">
+              <a class="price-item__file" href="!#" download>
                 <span class="visually-hidden">Загрузить файл</span>
               </a>
             </td>
@@ -145,8 +125,8 @@
               </form>
             </td>
           </tr>
-          <tr class="price-list__item price-item">
-            <th class="price-item__data price-item__data--name" scope="row">SPYB25</th>
+          <tr class="price-list__item price-item" data-model="ACER11" data-stroke-length="78" data-table-size="110" data-load-capacity="24" data-price="40000">
+            <th class="price-item__data price-item__data--name" scope="row">ACER11</th>
             <td class="price-item__data price-item__data--image">
               <picture>
                 <source media="(min-width: 1920px)" srcset="img/spyb25-desktop.jpg 1x, img/spyb25-desktop@2x.jpg 2x">
@@ -158,92 +138,14 @@
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </td>
-            <td class="price-item__data">25 мм</td>
-            <td class="price-item__data">65 х 65 мм</td>
+            <td class="price-item__data">78 мм</td>
+            <td class="price-item__data">110 х 110 мм</td>
             <td class="price-item__data">Центральный правый</td>
             <td class="price-item__data">OMLB02B</td>
-            <td class="price-item__data">10 кг</td>
-            <td class="price-item__data">30 000 ₽</td>
+            <td class="price-item__data">24 кг</td>
+            <td class="price-item__data">40 000 ₽</td>
             <td class="price-item__data">
-              <a class="price-item__file" href="!#">
-                <span class="visually-hidden">Загрузить файл</span>
-              </a>
-            </td>
-            <td class="price-item__data price-item__data--button-text">
-              <button class="price-item__button price-item__button--text">Подробнее</button>
-            </td>
-            <td class="price-item__data price-item__data--additional">
-              <dl class="price-item__list">
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Длина хода</dt>
-                  <dd class="price-item__list-value">Fabry-Perot Laser</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Привод</dt>
-                  <dd class="price-item__list-value">Fabry-Perot Laser</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Разрешение</dt>
-                  <dd class="price-item__list-value">1310 nm</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Адаптер</dt>
-                  <dd class="price-item__list-value">1310 nm</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Размер столика</dt>
-                  <dd class="price-item__list-value">Линейная скользаящая направляющая</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Грузоподъемность</dt>
-                  <dd class="price-item__list-value">Standard single-mode 9/125 μm</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Тип направляющей</dt>
-                  <dd class="price-item__list-value">Type</dd>
-                </div>
-                <div class="price-item__list-item">
-                  <dt class="price-item__list-key">Зеркальная версия</dt>
-                  <dd class="price-item__list-value">Type</dd>
-                </div>
-              </dl>
-            </td>
-            <td class="price-item__data price-item__data--form">
-              <form class="price-item__form" action="#!" method="post">
-                <label>
-                  <span class="visually-hidden">Количество</span>
-                  <input class="price-item__input" type="number" value="50" step="1" min="0">
-                </label>
-                <button class="price-item__form-button price-item__form-button--decrease" type="button">
-                  <span class="visually-hidden">Убрать из корзину одну штуку</span>
-                </button>
-                <button class="price-item__form-button price-item__form-button--increase" type="button">
-                  <span class="visually-hidden">Добавить в корзину одну штуку</span>
-                </button>
-              </form>
-            </td>
-          </tr>
-          <tr class="price-list__item price-item">
-            <th class="price-item__data price-item__data--name" scope="row">SPYB25</th>
-            <td class="price-item__data price-item__data--image">
-              <picture>
-                <source media="(min-width: 1920px)" srcset="img/spyb25-desktop.jpg 1x, img/spyb25-desktop@2x.jpg 2x">
-                <img class="price-item__image" src="img/spyb25.jpg" srcset="img/spyb25@2x.jpg 2x" alt="">
-              </picture>
-            </td>
-            <td class="price-item__data price-item__data--button-icon">
-              <button class="price-item__button price-item__button--icon">
-                <span class="visually-hidden">Подробнее</span>
-              </button>
-            </td>
-            <td class="price-item__data">25 мм</td>
-            <td class="price-item__data">65 х 65 мм</td>
-            <td class="price-item__data">Центральный правый</td>
-            <td class="price-item__data">OMLB02B</td>
-            <td class="price-item__data">10 кг</td>
-            <td class="price-item__data">30 000 ₽</td>
-            <td class="price-item__data">
-              <a class="price-item__file" href="!#">
+              <a class="price-item__file" href="!#" download>
                 <span class="visually-hidden">Загрузить файл</span>
               </a>
             </td>
@@ -290,7 +192,7 @@
               <form class="price-item__form price-item__form--minimize" action="#!" method="post">
                 <label>
                   <span class="visually-hidden">Количество</span>
-                  <input class="price-item__input visually-hidden" type="number" value="0" step="1" min="0">
+                  <input class="price-item__input visually-hidden" type="number" value="50" step="1" min="0">
                 </label>
                 <button class="price-item__form-button price-item__form-button--decrease visually-hidden" type="button">
                   <span class="visually-hidden">Убрать из корзину одну штуку</span>
@@ -301,8 +203,8 @@
               </form>
             </td>
           </tr>
-          <tr class="price-list__item price-item">
-            <th class="price-item__data price-item__data--name" scope="row">SPYB25</th>
+          <tr class="price-list__item price-item" data-model="ZOOM99" data-stroke-length="41" data-table-size="54" data-load-capacity="12" data-price="75000">
+            <th class="price-item__data price-item__data--name" scope="row">ZOOM99</th>
             <td class="price-item__data price-item__data--image">
               <picture>
                 <source media="(min-width: 1920px)" srcset="img/spyb25-desktop.jpg 1x, img/spyb25-desktop@2x.jpg 2x">
@@ -314,14 +216,14 @@
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </td>
-            <td class="price-item__data">25 мм</td>
-            <td class="price-item__data">65 х 65 мм</td>
+            <td class="price-item__data">41 мм</td>
+            <td class="price-item__data">54 х 73 мм</td>
             <td class="price-item__data">Центральный правый</td>
             <td class="price-item__data">OMLB02B</td>
-            <td class="price-item__data">10 кг</td>
-            <td class="price-item__data">30 000 ₽</td>
+            <td class="price-item__data">12 кг</td>
+            <td class="price-item__data">75 000 ₽</td>
             <td class="price-item__data">
-              <a class="price-item__file" href="!#">
+              <a class="price-item__file" href="!#" download>
                 <span class="visually-hidden">Загрузить файл</span>
               </a>
             </td>
@@ -379,8 +281,8 @@
               </form>
             </td>
           </tr>
-          <tr class="price-list__item price-item">
-            <th class="price-item__data price-item__data--name" scope="row">SPYB25</th>
+          <tr class="price-list__item price-item" data-model="MEOW32" data-stroke-length="52" data-table-size="15" data-load-capacity="100" data-price="10000">
+            <th class="price-item__data price-item__data--name" scope="row">MEOW32</th>
             <td class="price-item__data price-item__data--image">
               <picture>
                 <source media="(min-width: 1920px)" srcset="img/spyb25-desktop.jpg 1x, img/spyb25-desktop@2x.jpg 2x">
@@ -392,14 +294,14 @@
                 <span class="visually-hidden">Подробнее</span>
               </button>
             </td>
-            <td class="price-item__data">25 мм</td>
-            <td class="price-item__data">65 х 65 мм</td>
+            <td class="price-item__data">52 мм</td>
+            <td class="price-item__data">15 х 23 мм</td>
             <td class="price-item__data">Центральный правый</td>
             <td class="price-item__data">OMLB02B</td>
-            <td class="price-item__data">10 кг</td>
-            <td class="price-item__data">30 000 ₽</td>
+            <td class="price-item__data">100 кг</td>
+            <td class="price-item__data">10 000 ₽</td>
             <td class="price-item__data">
-              <a class="price-item__file" href="!#">
+              <a class="price-item__file" href="!#" download>
                 <span class="visually-hidden">Загрузить файл</span>
               </a>
             </td>
@@ -446,7 +348,85 @@
               <form class="price-item__form" action="#!" method="post">
                 <label>
                   <span class="visually-hidden">Количество</span>
-                  <input class="price-item__input" type="number" value="3" step="1" min="0">
+                  <input class="price-item__input" type="number" value="1" step="1" min="0">
+                </label>
+                <button class="price-item__form-button price-item__form-button--decrease" type="button">
+                  <span class="visually-hidden">Убрать из корзину одну штуку</span>
+                </button>
+                <button class="price-item__form-button price-item__form-button--increase" type="button">
+                  <span class="visually-hidden">Добавить в корзину одну штуку</span>
+                </button>
+              </form>
+            </td>
+          </tr>
+          <tr class="price-list__item price-item" data-model="BTSX68" data-stroke-length="10" data-table-size="30" data-load-capacity="1" data-price="1">
+            <th class="price-item__data price-item__data--name" scope="row">BTSX68</th>
+            <td class="price-item__data price-item__data--image">
+              <picture>
+                <source media="(min-width: 1920px)" srcset="img/spyb25-desktop.jpg 1x, img/spyb25-desktop@2x.jpg 2x">
+                <img class="price-item__image" src="img/spyb25.jpg" srcset="img/spyb25@2x.jpg 2x" alt="">
+              </picture>
+            </td>
+            <td class="price-item__data price-item__data--button-icon">
+              <button class="price-item__button price-item__button--icon">
+                <span class="visually-hidden">Подробнее</span>
+              </button>
+            </td>
+            <td class="price-item__data">10 мм</td>
+            <td class="price-item__data">30 х 30 мм</td>
+            <td class="price-item__data">Центральный правый</td>
+            <td class="price-item__data">OMLB02B</td>
+            <td class="price-item__data">1 кг</td>
+            <td class="price-item__data">1 ₽</td>
+            <td class="price-item__data">
+              <a class="price-item__file" href="!#" download>
+                <span class="visually-hidden">Загрузить файл</span>
+              </a>
+            </td>
+            <td class="price-item__data price-item__data--button-text">
+              <button class="price-item__button price-item__button--text">Подробнее</button>
+            </td>
+            <td class="price-item__data price-item__data--additional">
+              <dl class="price-item__list">
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Длина хода</dt>
+                  <dd class="price-item__list-value">Fabry-Perot Laser</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Привод</dt>
+                  <dd class="price-item__list-value">Fabry-Perot Laser</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Разрешение</dt>
+                  <dd class="price-item__list-value">1310 nm</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Адаптер</dt>
+                  <dd class="price-item__list-value">1310 nm</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Размер столика</dt>
+                  <dd class="price-item__list-value">Линейная скользаящая направляющая</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Грузоподъемность</dt>
+                  <dd class="price-item__list-value">Standard single-mode 9/125 μm</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Тип направляющей</dt>
+                  <dd class="price-item__list-value">Type</dd>
+                </div>
+                <div class="price-item__list-item">
+                  <dt class="price-item__list-key">Зеркальная версия</dt>
+                  <dd class="price-item__list-value">Type</dd>
+                </div>
+              </dl>
+            </td>
+            <td class="price-item__data price-item__data--form">
+              <form class="price-item__form" action="#!" method="post">
+                <label>
+                  <span class="visually-hidden">Количество</span>
+                  <input class="price-item__input" type="number" value="5" step="1" min="0">
                 </label>
                 <button class="price-item__form-button price-item__form-button--decrease" type="button">
                   <span class="visually-hidden">Убрать из корзину одну штуку</span>
